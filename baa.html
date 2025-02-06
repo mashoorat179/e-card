@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const color =["white","blue","red","green"];
+        const[,,,fourth]=color
+        // document.write(fourth);
+        const [first,...rest]=color
+        document.write(rest)
+        let a=5;
+        let b=4;
+        [a,b]=[b,a];
+        document.write(a);
+
+        const user={name:"mashoor",age:"10",place:"calicut"};
+        const {name,age,place,email='mshr@gmail.com'}=user;
+        console.log(name);
+        console.log(age);
+        console.log(place);
+        console.log(email);
+        const employees={
+            id:1,
+            detailes:{
+                name:"mashoor",
+                role:"developer",
+                age:"22"
+            }
+        }
+        const{detailes:{name:Ename,role:role,age:Eage}}=employees 
+
+        console.log(Ename);
+        console.log(role);
+        console.log(Eage);
+        
+            </script>
+</body>
+</html>
+
+
